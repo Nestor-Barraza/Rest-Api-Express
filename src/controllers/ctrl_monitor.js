@@ -5,7 +5,7 @@ const colors = require('colors');
 
 //------Model-------//
 
-const Monitor = require('../../database/models/monitor.js');
+const Monitor = require('../models/monitor.js');
 
 
 

@@ -6,8 +6,8 @@ const colors = require('colors');
 
 //------Model-------//
 
-const Monitorias = require('../../database/models/monitorias.js');
-const Monitor = require('../../database/models/monitor.js');
+const Monitorias = require('../models/monitorias.js');
+const Monitor = require('../models/monitor.js');
 const { _attributes } = require('../../database/database.js');
 
 
@@ -51,7 +51,7 @@ monitoriasCtrl.renderMonitoriasById = (req, res) => {
 monitoriasCtrl.editMonitorias =  (req, res) => {
     Monitorias.update({
         class: req.body.class,
-        assigned_monitor: req.body.assigned_monitor,
+        monitorId: req.body.monitorId,
         date: req.body.date,
         classroom: req.body.classroom,
     }, {

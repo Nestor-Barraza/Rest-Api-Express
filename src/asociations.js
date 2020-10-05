@@ -5,8 +5,7 @@ Monitor.hasMany(Monitorias, {
     foreignKey: {
         name: 'monitorId',
         allowNull: false
-      }
-  });
-  Monitorias.belongsTo(Monitor);
+    }
+});
+Monitorias.belongsTo(Monitor);
 
-  
